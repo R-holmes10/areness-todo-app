@@ -55,9 +55,9 @@ form button {
   flex-grow: 1;
   margin: 0;
 }
-.todo-item.completed .item-content {
+/* .todo-item.completed .item-content {
   text-decoration: line-through;
-}
+} */
 
 
 .update-form {
