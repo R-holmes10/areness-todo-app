@@ -21,7 +21,7 @@ function App() {
     }
 
     try {
-      const res = await axios.post('http://localhost:8080/api/item', { item: itemText, completed: false })
+      const res = await axios.post('https://areness-todo-app-backend.onrender.com/api/item', { item: itemText, completed: false })
       setListItems(prev => [...prev, res.data]);
       setItemText('');
     } catch (err) {
@@ -33,7 +33,7 @@ function App() {
   useEffect(() => {
     const getItemsList = async () => {
       try {
-        const res = await axios.get('http://localhost:8080/api/items')
+        const res = await axios.get('https://areness-todo-app-backend.onrender.com/api/items')
         setListItems(res.data);
       } catch (err) {
         console.log(err);
@@ -53,7 +53,7 @@ function App() {
     }
 
     try {
-      await axios.delete(`http://localhost:8080/api/item/${id}`)
+      await axios.delete(`https://areness-todo-app-backend.onrender.com/api/item/${id}`)
       const newListItems = listItems.filter(item => item._id !== id);
       setListItems(newListItems);
     } catch (err) {
@@ -64,7 +64,7 @@ function App() {
   // Update item
   const updateItem = async (id, newStatus) => {
     try {
-      const res = await axios.put(`http://localhost:8080/api/item/${id}`, { completed: newStatus })
+      const res = await axios.put(`https://areness-todo-app-backend.onrender.com/api/item/${id}`, { completed: newStatus })
       const updatedItemIndex = listItems.findIndex(item => item._id === id);
       listItems[updatedItemIndex].completed = newStatus;
     } catch (err) {
