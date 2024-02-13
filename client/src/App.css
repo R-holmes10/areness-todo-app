@@ -1,0 +1,101 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f4f4f4;
+}
+
+.App {
+  text-align: center;
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  color: #333;
+}
+
+.form {
+  margin-top: 20px;
+}
+
+form input,
+form button {
+  padding: 10px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+form button {
+  background-color: #28a745;
+  color: #fff;
+  cursor: pointer;
+}
+
+.todo-listItems {
+  margin-top: 20px;
+}
+
+.todo-item {
+  margin-top: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.item-content {
+  flex-grow: 1;
+  margin: 0;
+}
+.todo-item.completed .item-content {
+  text-decoration: line-through;
+}
+
+
+.update-form {
+  display: flex;
+  align-items: center;
+}
+
+.update-new-input {
+  flex-grow: 1;
+  padding: 8px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.update-new-btn {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 8px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.update-item,
+.delete-item {
+  background-color: #ffc107;
+  color: #333;
+  border: none;
+  padding: 8px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+
+.update-item:hover,
+.delete-item:hover {
+  background-color: #e0a800;
+}
+
