@@ -1,2 +1,2 @@
-# areness-todo-app
-TodoApp using MERN Stack
+# TodoApp using MERN Stack
+Switch to `master` branch to access the code.
